@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 MyText example. Another changge.Here is the change from the deloper 1
 
 Uaki
+=======
+MyText example. Another changge. Change from developer 2
+MyText example. Another changge.Here is the change from the deloper 1
+
+>>>>>>> 41743f19e08f1f6fac345175478af092ae1fc2f5
