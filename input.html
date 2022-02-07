@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+    <form action="input.html" method="post">
+        <fieldset>
+            <legend>Person data</legend>
+            <input name="Name" type="text" placeholder="Name">
+            <input name="LastName" type="text" placeholder="Surname">
+            <label for="checkboxId">This is the checkbox</label>
+            <input name="Checkbox" type="checkbox" id="checkboxId">
+            <label for="male">Male</label><input id="male" type="radio" name="gender">
+            <label for="female">Female</label><input id="female" type="radio" name="gender">
+            <select name="favColor" id="mySelection" hidden>
+                <option value="B">
+                    Black
+                </option>
+                <option value="W">
+                    White
+                </option>
+                <option value="O">
+                    Orange
+                </option>
+                <option value="Y">
+                    Yellow
+                </option>
+                <option value="" selected hidden>Please select your answer</option>
+            </select>
+        </fieldset>
+        <button type="submit" class="save">Saglabāt</button>
+        <button type="reset" class="cancel">Cancel</button>
+    </form>
+
+    <div class="myRule">
+        <p>
+            Šeit ir pirmais paragr
+        </p>
+        <p>
+            There is the second parag
+        </p>
+    </div>
+    <p>
+        The third parag
+    </p>
+
+</body>
+
+</html>

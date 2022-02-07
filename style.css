@@ -1,0 +1,21 @@
+body {
+    font-family: 'Tangerine';
+}
+
+button {
+    color: rgb(15, 7, 51);
+    font-size: large;
+    background-color: black;
+}
+
+.save {
+    background-color: blueviolet;
+}
+
+.cancel {
+    background-color: #058385;
+}
+
+.myRule {
+    font-size: larger;
+}
