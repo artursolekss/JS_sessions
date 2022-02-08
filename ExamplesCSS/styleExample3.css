@@ -1,0 +1,56 @@
+p {
+    overflow: hidden;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+ul {
+    list-style-type: none
+}
+
+li {
+    float: left;
+    margin: 3px;
+    padding: 6px;
+    line-height: 20px;
+    background-color: black
+}
+
+li a:any-link {
+    color: white;
+}
+
+li a:hover {
+    color: palegreen;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.outerClass {
+    color: tomato;
+}
+
+.innerClass {
+    color: gold;
+}
+
+.outerClass .innerClass {
+    color: violet;
+}
+
+.outerClass .innerClass #specialID {
+    color: cyan;
+}

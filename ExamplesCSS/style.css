@@ -1,0 +1,38 @@
+* {
+    background-color: silver;
+}
+
+@media (min-width: 400px) {
+    div {
+        margin: 10px 1px 4px 6px;
+        height: 100px;
+        width: 400px
+    }
+}
+
+@media (max-width: 400px) {
+    div {
+        margin: 5px 0.5px 2px 3px;
+    }
+}
+
+.section1 {
+    overflow: auto
+}
+
+.section2 {
+    overflow: hidden
+}
+
+.section3 {
+    overflow: visible
+}
+
+#save {
+    background-color: blue;
+    color: white;
+}
+
+#importantInfo {
+    color: red;
+}
