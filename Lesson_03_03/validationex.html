@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="validationscript.js"></script>
+    <link rel="stylesheet" href="validationstyle.css">
+</head>
+
+<body>
+    <form id="personInfoForm" method="post">
+        <p>
+            <label for="name">Name <span>(required, at least 3 characters)</span></label>
+            <input id="name" name="name" type="text">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+</body>
