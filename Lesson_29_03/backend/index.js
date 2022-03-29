@@ -34,6 +34,14 @@ app.post("/add-name", (req, res) => {
     })
 })
 
+app.get("/get-names", (req, res) => {
+    let sql = "SELECT * FROM names";
+    connection.query(sql, (error, results) => {
+        if (error) throw error;
+        res.send(JSON.stringify({ "status": 200, "error": null, "response": results }));
+    })
+})
+
 app.listen(5000, () => {
     console.log("Server is running on port 5000")
 })
