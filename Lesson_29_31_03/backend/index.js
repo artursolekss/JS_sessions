@@ -42,6 +42,25 @@ app.get("/get-names", (req, res) => {
     })
 })
 
+app.post("/change-names", (req, res) => {
+    const entrisChanged = req.body;
+    let sql = "UPDATE names SET name=?,lastname=? WHERE ID=?";
+    entrisChanged.map((entry) => {
+        connection.query(sql, [entry.name, entry.lastname, entry.ID], (error, results) => {
+            if (error) throw error;
+        })
+    });
+    res.send(JSON.stringify({ "status": 200, "error": null, "response": {} }));
+})
+
+app.post("/delete-name", (req, res) => {
+    let sql = "DELETE FROM names WHERE ID = ?";
+    connection.query(sql, [req.body.id], (error, results) => {
+        if (error) throw error;
+        res.send(JSON.stringify({ "status": 200, "error": null, "response": results }));
+    })
+})
+
 app.listen(5000, () => {
     console.log("Server is running on port 5000")
 })

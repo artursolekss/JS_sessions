@@ -13,12 +13,14 @@ class NameForm extends React.Component {
         let headers = new Headers();
         headers.append("Content-type", "application/json");
 
+
+        const wind = window;
         fetch('http://localhost:5000/add-name', {
             method: 'POST',
             headers: headers,
             body: JSON.stringify(this.state)
         }).then(function (response) {
-            console.log(response);
+            wind.location.reload();
             return response.json;
         })
         event.preventDefault();
