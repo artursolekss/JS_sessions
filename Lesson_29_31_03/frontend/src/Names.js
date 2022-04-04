@@ -25,7 +25,7 @@ class Names extends React.Component {
             if (response.ok) {
                 response.json().then(json => {
                     self.setEntries(json.response);
-                    self.setInitialEntries([...json.response]);
+                    self.setInitialEntries(json.response);
                 })
             }
         })
