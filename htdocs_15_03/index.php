@@ -8,8 +8,8 @@ if (
     isset($_POST["firstname"]) && $_POST["firstname"] !== ""
     && isset($_POST["lastname"]) && $_POST["lastname"] !== ""
 ) :
-$sql = "INSERT INTO persons (firstname,lastname) VALUES ('{$_POST["firstname"]}','{$_POST["lastname"]}')";
-$con->query($sql);
+    $sql = "INSERT INTO persons (firstname,lastname) VALUES ('{$_POST["firstname"]}','{$_POST["lastname"]}')";
+    $con->query($sql);
 endif;
 
 $sql = "SELECT * FROM persons";

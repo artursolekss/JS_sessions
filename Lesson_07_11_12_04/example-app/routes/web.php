@@ -26,7 +26,7 @@ Route::get('/dashboard', function () {
 Route::get('/helloworld', [HelloWorldController::class,  'index']);
 Route::get('/names', [NamesController::class,  'index'])->middleware('auth');
 Route::post('/add-name', [NamesController::class,  'addName'])->middleware('auth');
-
+Route::post('/send-email', [NamesController::class,  'sendEmail'])->middleware('auth');
 require __DIR__ . '/auth.php';
 
 
